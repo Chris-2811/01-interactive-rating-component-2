@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive Rating Component</title>
+</head>
+<body>
+    <div class="rating-card">
+        <div class="icon-star">
+            <img src="images/icon-star.svg" alt="">
+        </div>
+        <div class="text-content">
+            <h3>How did we do?</h3>
+            <p>Please let us know how we did with you support request. All feedback is appreciated to help us improve our offering!</p>
+        </div>
+        <div class="rating-icons">
+            <ul>
+                <li class="rating" value = '1'>1</li>
+                <li class="rating" value = '2'>2</li>
+                <li class="rating" value = '3'>3</li>
+                <li class="rating" value = '4'>4</li>
+                <li class="rating" value = '5'>5</li>
+            </ul>
+        </div>
+        <button class="submit">Submit</button>
+    </div>
+
+    <!-- Thank You Card -->
+
+    <div class="thankyou-card hidden">
+        <img src="images/illustration-thank-you.svg" alt="">
+        <div class="selectedStars"></div>
+        <div class="text-content">
+            <h3>Thank you!</h3>
+            <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

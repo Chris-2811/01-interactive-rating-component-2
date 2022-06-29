@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%, 70%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  color: var(--White);
+  background: var(--Very-Dark-Blue);
+  height: 100vh;
+  display: flex;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.rating-card {
+  background: var(--Dark-Blue);
+  width: 390px;
+  height: 31vh;
+  padding: 30px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.icon-star {
+  background: hsl(216, 12%, 23%);
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon-star img {
+  width: 12px;
+}
+
+.text-content p {
+  color: var(--Medium-Grey);
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.rating-icons ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-icons ul > li {
+  background: hsl(216, 12%, 54%, 10%);
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0 30px 0;
+  color: var(--Medium-Grey);
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.rating-icons ul > li:hover {
+  background: var(--primary-color);
+  cursor: pointer;
+  color: var(--White);
+}
+
+.rating-card .submit {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 20px;
+  border: none;
+  background: var(--primary-color);
+  color: var(--White);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.rating-card .submit:hover {
+  color: var(--primary-color);
+  background: var(--White);
+  cursor: pointer;
+}
+
+.thankyou-card .hidden {
+    display: none;
+}
+
+.rating-icons ul > li.selected {
+    background: var(--Light-Grey);
+    color: var(--White);
+}
+
+/* Thank You Card */
+
+.thankyou-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 390px;
+  height: 31vh;
+  z-index: 1;
+  background: var(--Dark-Blue);
+  border-radius: 20px;
+  padding: 35px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.hidden {
+    display: none;
+}
+
+.selectedStars {
+  margin: 20px 0 5px 0;
+  color: var(--primary-color);
+  background: hsl(216, 12%, 54%, 10%);
+  font-size: 15px;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.thankyou-card h3 {
+  margin-top: 20px;
+}
